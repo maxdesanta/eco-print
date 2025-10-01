@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoPrint - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 ">
+    <!-- Navbar -->
+    <nav class="bg-[#005E00] text-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="img/logo.svg" alt="EcoPrint Logo" class="w-9 h-10">
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="about.html" class="text-yellow-300 transition">About</a></li>
+                <li><a href="product.html" class="hover:text-yellow-300 transition">Product</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-300 transition">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none p-1 rounded-md hover:ring-2 hover:ring-yellow-300 hover:ring-offset-2 hover:ring-offset-[#005E00] hover:text-yellow-300 transition ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (collapsible with transition) -->
+        <div id="mobile-menu" class="max-h-0 overflow-hidden md:hidden bg-[#005E00] transition-all duration-500 ease-in-out">
+            <ul class="flex flex-col space-y-4 p-6 font-medium opacity-0 transition-opacity duration-500 ease-in-out">
+                <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="about.html" class="text-yellow-300 transition">About</a></li>
+                <li><a href="product.html" class="hover:text-yellow-300 transition">Product</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-300 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section About -->
+    <section class="pt-28 pb-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <!-- Text Content -->
+            <div class="space-y-6" data-aos="fade-right">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#005E00] relative inline-block">
+                    Tentang Kami
+                    <span class="absolute -bottom-2 left-0 w-16 h-1 bg-yellow-400 rounded"></span>
+                </h2>
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                    Eco Print adalah sebuah perusahaan jasa yang membuat produk dari 3D Printing berbahan dasar botol plastik bekas yang sangat mencemari lingkungan.
+                </p>
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                    Setiap produk yang kami ciptakan bukan sekadar objek, melainkan cerita tentang transformasi mulai dari perabotan rumah tangga yang fungsional, dekorasi artistik, hingga prototipe inovatif.
+                </p>
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                    Setiap karya kami adalah bukti nyata bahwa teknologi dan kepedulian terhadap lingkungan bisa berjalan beriringan.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class="flex justify-center md:justify-end relative" data-aos="fade-left">
+                <div class="relative">
+                    <!-- Decorative background block -->
+                    <div class="absolute -top-6 -left-6 w-28 h-28 md:w-32 md:h-32 bg-[#6EBE45] rounded-xl opacity-20"></div>
+                    
+                    <img src="img/about-us.jpg" 
+                        alt="3D Printer" 
+                        class="relative w-full max-w-sm md:max-w-md lg:max-w-lg rounded-xl shadow-xl object-cover transform hover:scale-105 transition duration-500" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section class="py-16 text-white bg-gradient-to-r from-[#025D00] via-[#026900] to-[#039100] mx-6 md:mx-20 rounded-xl shadow-lg">
+        <div class="container mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+            <!-- Visi -->
+            <div class="space-y-6 md:pr-8">
+            <div class="flex items-center">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-wide border-b-2 border-white pb-2">
+                Visi
+                </h2>
+            </div>
+            <p class="leading-relaxed text-base sm:text-lg md:text-xl font-light">
+                Menjadikan produk kami yang ramah lingkungan dengan berbasis 3D printing di Indonesia,
+                mengurangi limbah plastik dan sampah plastik tidak terbuang sia-sia.
+            </p>
+            </div>
+
+            <!-- Misi -->
+            <div class="space-y-6 md:pl-8">
+            <div class="flex items-center">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-wide border-b-2 border-white pb-2">
+                Misi
+                </h2>
+            </div>
+            <ol class="list-decimal list-inside space-y-2 text-base sm:text-lg md:text-xl font-light">
+                <li>Inovasi yang berkelanjutan</li>
+                <li>Memberikan kualitas terbaik</li>
+                <li>Menciptakan produk yang bernilai</li>
+                <li>Mengedukasi masyarakat</li>
+            </ol>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Langkah Kami -->
+    <section class="py-16">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-10">Langkah Kami Merubah Lingkungan</h2>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-4 md:gap-3 lg:gap-2 justify-items-center">
+                <!-- Card 1 -->
+                <div class="bg-[#025D00] text-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300 w-full max-w-[220px] md:max-w-[230px] md:px-2">
+                    <!-- Icon Circle -->
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-400 mx-auto mb-4">
+                    <img src="img/langkah1.png" 
+                        class="w-9 h-9" alt="Sampah Plastik"/>
+                    </div>
+                    <p class="font-semibold">Mengumpulkan Sampah Plastik</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#025D00] text-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300 w-full max-w-[220px] md:max-w-[230px] md:px-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-400 mx-auto mb-4">
+                    <img src="img/langkah2.png" 
+                        class="w-9 h-9" alt="Sortir Plastik"/>
+                    </div>
+                    <p class="font-semibold">Menyortir Botol Plastik</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#025D00] text-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300 w-full max-w-[220px] md:max-w-[230px] md:px-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-400 mx-auto mb-4">
+                    <img src="img/langkah3.png" 
+                        class="w-9 h-9" alt="Filament"/>
+                    </div>
+                    <p class="font-semibold">Mengubah Botol Plastik Menjadi Benang</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#025D00] text-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300 w-full max-w-[220px] md:max-w-[230px] md:px-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-400 mx-auto mb-4">
+                    <img src="img/langkah4.png" 
+                        class="w-9 h-9" alt="3D Printing"/>
+                    </div>
+                    <p class="font-semibold">Proses 3D Printing</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-[#025D00] text-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300 w-full max-w-[220px] md:max-w-[230px] md:px-2">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-400 mx-auto mb-4">
+                    <img src="img/langkah5.png" 
+                        class="w-9 h-9" alt="Produk Jadi"/>
+                    </div>
+                    <p class="font-semibold">Barang Siap Digunakan</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kontribusi Kami -->
+    <section class="py-16 bg-gradient-to-r from-[#025D00] via-[#026900] to-[#039100] text-white">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-10">Kontribusi Kami untuk Lingkungan</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Box 1 -->
+                <div class="p-6">
+                    <h3 class="text-4xl md:text-5xl font-extrabold">100 ton</h3>
+                    <p class="mt-2 text-lg md:text-xl text-yellow-300 font-semibold">
+                        Sampah Botol Plastik Diterima
+                    </p>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="p-6">
+                    <h3 class="text-4xl md:text-5xl font-extrabold">5,000++</h3>
+                    <p class="mt-2 text-lg md:text-xl text-yellow-300 font-semibold">
+                        Produk Botol Plastik Diproduksi
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tim Kami -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-10">
+            Tim Kami
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 justify-items-center">
+            
+                <!-- Member 1 -->
+                <div class="relative w-full max-w-[260px] h-80 rounded-xl overflow-hidden shadow-lg">
+                    <img src="img/max.png" alt="Tim 1" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 right-0 bg-[#025D00] text-white py-2 px-4 rounded-tl-xl inline-block">
+                        <span class="block font-semibold text-sm md:text-base truncate">
+                            Marcellinus Ario Xavier S.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="relative w-full max-w-[260px] h-80 rounded-xl overflow-hidden shadow-lg">
+                    <img src="img/aisyan.png" alt="Tim 2" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 right-0 bg-[#025D00] text-white py-2 px-4 rounded-tl-xl inline-block">
+                        <span class="block font-semibold text-sm md:text-base truncate">
+                            Muhammad Aisyan Segara
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="relative w-full max-w-[260px] h-80 rounded-xl overflow-hidden shadow-lg">
+                    <img src="img/kayla.png" alt="Tim 3" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 right-0 bg-[#025D00] text-white py-2 px-4 rounded-tl-xl inline-block">
+                        <span class="block font-semibold text-sm md:text-base truncate">
+                            Kayla Jovita
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#005E00] text-white text-center py-6">
+        <p>&copy; 2025 EcoPrint. All rights reserved.</p>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html>
